@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir -p ~/.ssh
-mv id_rsa ~/.ssh/
+cp id_rsa ~/.ssh/
 chmod 600 ~/.ssh
 chmod 400 ~/.ssh/id_rsa
 cat - << EOS >> ~/.ssh/config
