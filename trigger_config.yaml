@@ -1,0 +1,7 @@
+name: run-linter-and-test
+github:
+  owner: marufeuille
+  name: formatter-test
+  pullRequest:
+    branch: "^develop$"
+filename: "gcp/build/test/cloud_build.yaml"
