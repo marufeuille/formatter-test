@@ -1,0 +1,7 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "black", "-f", "black/Dockerfile", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["run", "--rm", "--name", "black", "black", "ls", "-lh"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["run", "--rm", "--name", "black", "black", "bash", "black/black.sh"]
